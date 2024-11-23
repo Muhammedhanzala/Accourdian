@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #d1e8e2, #f0f7fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main-heading {
+    font-size: 38px;
+    color: #2f4f4f;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #ff8c00;
+    padding-bottom: 10px;
+}
+
+.accordion {
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #ffebcc;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.plus, .minus {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+    transition: transform 0.2s ease;
+}
+
+.plus {
+    display: block;
+    color: #ff8c00;
+}
+
+.plus:hover {
+    transform: scale(1.2);
+}
+
+.minus {
+    display: none;
+    color: #ff5733;
+}
+
+.minus:hover {
+    transform: scale(1.2);
+}
+
+.answer {
+    display: none;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card.open .answer {
+    display: block;
+}
+
+.card.open .plus {
+    display: none;
+}
+
+.card.open .minus {
+    display: block;
+}
+
+@media (max-width: 1000px) {
+    .accordion {
+        width: 80%;
+    }
+}
+
+@media (max-width: 750px) {
+    .main-heading {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 550px) {
+    .accordion {
+        width: 90%;
+    }
+
+    .question {
+        font-size: 18px;
+    }
+}

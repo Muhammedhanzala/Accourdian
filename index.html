@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accourdian</title>
+<link rel="stylesheet" href="Accourdian/style.css">
+</head>
+<body>
+    <h1 class="main-heading"><i>General Questions</i></h1>
+
+<div class="accordion">
+    <div class="card">
+        <div class="box">
+            <div class="question">Do you accept all major credit cards?</div>
+            <img src="Accourdian/plus.svg" class="plus" onclick="toggleContent(1)" alt="plus">
+            <img src="Accourdian/minus.png" class="minus" onclick="toggleContent(1)" alt="minus">
+        </div>
+        <div class="answer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae a, quod doloribus vero vel laudantium omnis.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="box">
+            <div class="question">Do you support local farmers?</div>
+            <img src="Accourdian/plus.svg" class="plus" onclick="toggleContent(2)" alt="plus">
+            <img src="Accourdian/minus.png" class="minus" onclick="toggleContent(2)" alt="minus">
+        </div>
+        <div class="answer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae a, quod doloribus vero vel laudantium omnis.</p>
+        </div>
+    </div>
+</div>
+
+<script src="Accourdian/app.js"></script>    
+</body>
+</html>
